@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $background;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    color: $main-color;
+    font-size: 4rem;
+    font-family: $main-font;
+    text-align: center;
+    margin: 20px;
+}
