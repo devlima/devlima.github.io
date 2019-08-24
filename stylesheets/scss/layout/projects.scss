@@ -1,0 +1,80 @@
+.projects {
+    padding: 40px 40px 40px 0;
+
+    .projects-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+        article {
+            height: 200px;
+            background-color: $secondary-color;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                .project-icon {
+                    display: none;
+                }
+
+                .hover {
+                    display: block;
+                    animation: fadein .4s forwards ease-in-out;
+                }
+            }
+    
+            .hover {
+                display: none;
+                text-align: center;
+
+                h2 {
+                    text-transform: uppercase;
+                    color: $text-color;
+                    font-size: 2rem;
+                    font-family: $main-font;
+                    font-weight: 600;
+                    text-align: center;
+                }
+
+                a {
+                    font-family: $main-font;
+                    text-transform: uppercase;
+                    color: $text-color;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    display: inline-block;
+                    margin: 10px 40px;
+                    cursor: pointer;
+
+                    &:hover {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+
+    }
+
+    25% {
+        display: block;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

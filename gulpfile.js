@@ -1,8 +1,8 @@
 'use strict'
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var cssnano = require('gulp-cssnano');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const cssnano = require('gulp-cssnano');
 
 sass.compiler = require('node-sass');
 
