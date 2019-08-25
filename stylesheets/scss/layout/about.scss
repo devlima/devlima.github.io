@@ -1,12 +1,13 @@
 .about {
-    padding: 40px 0 40px 40px;
+    padding: 20px 0 20px 20px;
 
     p {
-        font-size: 1rem;
-        line-height: 1.3rem;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
         font-family: $secondary-font;
         color: $text-color;
         text-align: justify;
         margin-top: 20px;
+        min-height: 200px;
     }
 }

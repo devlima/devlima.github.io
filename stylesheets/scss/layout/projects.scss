@@ -1,10 +1,11 @@
 .projects {
-    padding: 40px 40px 40px 0;
+    padding: 20px 20px 20px 0;
 
     .projects-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
+
 
         article {
             height: 200px;
@@ -59,22 +60,12 @@
 
 }
 
-@keyframes fadein {
-    0% {
-        opacity: 0;
+@media only screen and (max-width: 620px) {
 
-    }
+    .projects {
+        .projects-wrapper {
+            grid-template-columns: 1fr;
+        }
 
-    25% {
-        display: block;
-        opacity: 0;
-    }
-
-    50% {
-        opacity: .2;
-    }
-
-    100% {
-        opacity: 1;
     }
 }
