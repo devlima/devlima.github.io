@@ -1,15 +1,13 @@
 .about {
-    padding: 20px 0 20px 20px;
+    padding: 20px;
     grid-column: 1;
     grid-row: 1;
 
     p {
-        font-size: 1.1rem;
+        margin-top: 20px;
+        font: normal 1.1rem $secondary-font;
         line-height: 1.4rem;
-        font-family: $secondary-font;
         color: $text-color;
         text-align: justify;
-        margin-top: 20px;
-        min-height: 200px;
     }
 }

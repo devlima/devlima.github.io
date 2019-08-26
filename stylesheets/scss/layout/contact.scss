@@ -1,8 +1,9 @@
 .contact {
-    grid-column: 1;
-    grid-row: 1;
+    margin-top: 400px;
     display: flex;
-    align-items: flex-end;
+    grid-column: 1;
+    align-items: center;
     justify-content: center;
-    padding: 90px;
+    height: 100px;
+    grid-row: 1;
 }

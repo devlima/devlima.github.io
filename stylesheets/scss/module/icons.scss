@@ -1,6 +1,6 @@
 .icon {
-    color: $text-color;
     font-size: 2rem;
+    color: $text-color;
 }
 
 .project-icon {
@@ -10,13 +10,13 @@
 }
 
 .project-link-icon {
-    color: $text-color;
-    font-size: 2.5rem;
     display: block;
+    font-size: 2.5rem;
+    color: $text-color;
 }
 
 .contact-link-icon {
-    color: $main-color;
+    margin: 0 15px;
     font-size: 3rem;
-    margin: 15px;
+    color: $main-color;
 }
