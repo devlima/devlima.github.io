@@ -1,84 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#fff6d3">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fff6d3" />
     <title>devlima</title>
     <script src="https://kit.fontawesome.com/fedd0c094c.js"></script>
-    <link rel="stylesheet" href="./stylesheets/css/imports.css">
-    <link rel="icon" type="image/png" href="./img/favicon-32x32.png">
-</head>
-<body>
-  <div class="wrapper">
-    <section id="about" class="about">
-      <h1>sobre</h1>
-      <p>
-        Me chamo <b>Gabriel Lima</b>, tenho 20 anos e curso <b>Sistemas de Informação</b> pela <b>>UNESA</b>.
-      </p>
-      <p>
-        Minha história com desenvolvimento começa bem cedo na minha adolescência com sites simples em HTML e CSS, 
-        eu <b>sempre gostei de front-end</b> mesmo antes de saber o que era, 
-        tenho alguns projetos para colocar em prática o que tenho estudado.
-      </p>
-      <p>
-        Tenho conhecimento em <b>HTML, CSS, SASS, GIT</b> e atualmente tenho estudado <b>JavaScript</b>, 
-        recentemente comecei a usar <b>GulpJS</b> para automatizar algumas tarefas e 
-        no futuro pretendo estudar alguma <b>biblioteca JavaScript</b> e <b>NodeJS</b> para ter um conhecimento de back-end.
-      </p>
-    </section>
+    <link rel="stylesheet" href="./stylesheets/css/imports.css" />
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" />
+  </head>
+  <body>
+    <main>
+      <h1>Gabriel Lima</h1>
+      <h2>front-end developer intern at <a href="https://www.fattoriaweb.com.br" target="_blank" rel="noopener">fattoria</a></h2>
+  
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/gbrl/" target="_blank" rel="noopener">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/devlima" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <a href="http://t.me/limagabriel" target="_blank" rel="noopener">Telegram</a>
+        </li>
+        <li>
+          <a href="malito:devlimagabriel@gmail.com" target="_blank" rel="noopener">devlimagabriel@gmail.com</a>
+        </li>
+      </ul>
+      <button name="btn" id="dark">dark mode</button>
+      <button name="btn" id="light" class="hidden">light mode</button>
+    </main>
 
-    <section class="contact">
-        <a class="contact-link-icon" href="http://t.me/limagabriel" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
-        <a class="contact-link-icon" href="https://github.com/devlima" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-        <a class="contact-link-icon" href="https://codepen.io/limagbrl" target="_blank" rel="noopener noreferrer"><i class="fab fa-codepen"></i></a>
-        <a class="contact-link-icon" href="https://www.linkedin.com/in/gbrl/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-        <a class="contact-link-icon" href="malito:devlimagabriel@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
-    </section>
-
-    <section id="projects" class="projects">
-      <h1>projetos</h1>
-      <div class="projects-wrapper">
-        <article>
-          <span  class="project-icon"><i class="fas fa-calculator"></i></span>
-          <div  class="hover">
-            <h2>calculator</h2>
-            <a href="https://github.com/devlima/calculator" target="_blank"><span class="project-link-icon"><i class="fas fa-code"></i></span>code</a>
-            <a href="/calculator/"><span class="project-link-icon"><i class="fas fa-eye"></i></span>live</a>
-          </div>
-        </article>
-
-        <article>
-          <span class="project-icon"><i class="fas fa-hourglass"></i></span>
-          <div class="hover">
-            <h2>study-timer</h2>
-            <a href="https://github.com/devlima/study-timer"><span class="project-link-icon"><i class="fas fa-code"></i></span>code</a>
-            <a href="/study-timer/"><span class="project-link-icon"><i class="fas fa-eye"></i></span>live</a>
-          </div>
-        </article>
-
-        <article>
-          <span  class="project-icon"><i class="fas fa-brain"></i></span>
-          <div  class="hover">
-            <h2>psicopedagogia</h2>
-            <a href="https://github.com/devlima/psicopedagogia"><span class="project-link-icon"><i class="fas fa-code"></i></span>code</a>
-            <a href="https://psicopedagogia.netlify.com/"><span class="project-link-icon"><i class="fas fa-eye"></i></span>live</a>
-          </div>
-        </article>
-
-        <article>
-          <span class="project-icon"><i class="fas fa-jedi"></i></span>
-          <div class="hover">
-            <h2>starwars-planets</h2>
-            <a href="https://github.com/devlima/starwars-planets"><span class="project-link-icon"><i class="fas fa-code"></i></span>code</a>
-            <a href="/starwars-planets/"><span class="project-link-icon"><i class="fas fa-eye"></i></span>live</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-
-  </div>
-</body>
+    <script src="scripts/dark-light.js"></script>
+  </body>
 </html>
