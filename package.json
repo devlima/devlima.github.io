@@ -1,28 +1,34 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "a simple portfolio",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/devlima/portfolio.git"
-  },
-  "author": "Gabriel Lima",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/devlima/portfolio/issues"
-  },
-  "homepage": "https://github.com/devlima/portfolio#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-sass": "^4.0.2",
-    "node-sass": "^4.12.0"
-  },
+  "name": "devlima.github.io",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "js-yaml": ">=3.13.1"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
