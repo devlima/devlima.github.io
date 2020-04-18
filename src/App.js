@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Profile from './components/Profile';
+import Projects from './components/Projects';
 
 function App() {
   return (
-    <div>
-      <h1>devlima.github.io</h1>
-    </div>
+    <Fragment>
+      <Profile />
+      <Projects />
+    </Fragment>
   );
 }
 

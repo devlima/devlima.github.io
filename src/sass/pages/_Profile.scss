@@ -1,0 +1,15 @@
+.profile {
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+    @include media-min992 {
+        margin-bottom: 40px;
+        width: auto;
+        height: auto;
+    }
+}
