@@ -5,11 +5,14 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #1A1A1A;
+}
+
 .root {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    background-color: #1A1A1A;
     color: #E4E4E4;
     font-family: 'Noto Sans', sans-serif;
     overflow: hidden;
