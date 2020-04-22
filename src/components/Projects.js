@@ -15,7 +15,7 @@ class Projects extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://ai.github.com/users/devlima/repos')
+        axios.get('https://api.github.com/users/devlima/repos')
         .then(res => {
             this.setState({
                 repos: res.data
