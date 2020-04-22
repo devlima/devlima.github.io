@@ -40,8 +40,9 @@ class Projects extends Component {
                         {this.state.repos.map((repo, index) => {
                             return (
                                 <li key={index}>
-                                    <a href={repo.homepage} target="_blank" rel="noopener noreferrer">{repo.name}</a>
-                                    <p>{repo.description}</p>
+                                    <a className="projects--link" href={repo.homepage} target="_blank" rel="noopener noreferrer">{repo.name}</a>
+                                    <p className="projects--description">{repo.description}</p>
+                                    <a className="projects--link-code" href={repo.html_url} target="_blank" rel="noopener noreferrer">code on github</a>
                                 </li>
                             )
                         })}

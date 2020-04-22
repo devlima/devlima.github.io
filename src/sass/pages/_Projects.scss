@@ -12,23 +12,31 @@
         height: auto;
     }
     
+    &--description {
+        font-size: 14px;
+        line-height: 19px;
+        opacity: 0.4;
+    }
+
+    &--link {
+        margin: 0;
+        font-size: 20px;
+        line-height: 27px;
+
+        &-code {
+            margin: 0;
+            font-size: 12px;
+            line-height: 19px;
+            opacity: 0.4;
+        }
+    }
+
     &-nav {
         margin-top: 20px;
 
         li {
             margin-bottom: 16px;
 
-            p {
-                font-size: 14px;
-                line-height: 19px;
-                opacity: 0.4;
-            }
-
-            a {
-                margin: 0;
-                font-size: 20px;
-                line-height: 27px;
-            }
         }
     }
 }
