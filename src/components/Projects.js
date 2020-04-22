@@ -10,12 +10,17 @@ class Projects extends Component {
         this.state = {
             repos: [],
             error: false,
-            errorDetail: ''
+            errorDetail: '',
+            config: {
+                headers: { 'Access-Control-Allow-Origin': '*'}
+            }
         }
     }
 
     componentDidMount() {
-        axios.get('https://api.github.com/users/devlima/repos')
+        axios.get('https://cors-anywhere.herokuapp.com/https://api.github.com/users/devlima/repos', {
+            crossdomain: true
+        })
         .then(res => {
             this.setState({
                 repos: res.data
@@ -29,27 +34,24 @@ class Projects extends Component {
         })
     }
     render(){
-        if(this.state.error) {
-            return <h1 className="title h1">Try again later</h1>
-        }
         return (
-            <div id="projects" className="projects">
-                <h2 className="title h2">Projects</h2>
-                <nav className="projects-nav">
-                    <ul>
-                        {this.state.repos.map((repo, index) => {
-                            return (
-                                <li key={index}>
-                                    <a className="projects--link" href={repo.homepage} target="_blank" rel="noopener noreferrer">{repo.name}</a>
-                                    <p className="projects--description">{repo.description}</p>
-                                    <a className="projects--link-code" href={repo.html_url} target="_blank" rel="noopener noreferrer">code on github</a>
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </nav>
-                <a href="#profile" className="page-link page-link-left"> <FontAwesomeIcon icon={faLongArrowAltLeft} /> <span>Profile</span></a>
-            </div>
+                <div id="projects" className={this.state.error ? 'error' : 'projects'}>
+                    <h2 className="title h2">Projects</h2>
+                    <nav className="projects-nav">
+                        <ul>
+                            {this.state.repos.map((repo, index) => {
+                                return (
+                                    <li key={index}>
+                                        <a className="projects--link" href={repo.homepage} target="_blank" rel="noopener noreferrer">{repo.name}</a>
+                                        <p className="projects--description">{repo.description}</p>
+                                        <a className="projects--link-code" href={repo.html_url} target="_blank" rel="noopener noreferrer">code on github</a>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </nav>
+                    <a href="#profile" className="page-link page-link-left"> <FontAwesomeIcon icon={faLongArrowAltLeft} /> <span>Profile</span></a>
+                </div>
         )
     }
 }

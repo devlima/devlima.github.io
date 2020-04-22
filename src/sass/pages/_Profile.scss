@@ -6,6 +6,10 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
+
+    .h2 {
+        display: none;
+    }
     
     @include media-min992 {
         margin-bottom: 40px;
