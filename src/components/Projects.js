@@ -18,7 +18,7 @@ class Projects extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://cors-anywhere.herokuapp.com/https://api.github.com/users/devlima/repos', {
+        axios.get('https://api.github.com/users/devlima/repos', {
             crossdomain: true
         })
         .then(res => {
