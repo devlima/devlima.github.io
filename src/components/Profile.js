@@ -14,7 +14,7 @@ class Profile extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://cors-anywhere.herokuapp.com/https://api.github.com/users/devlima')
+        axios.get('https://api.github.com/users/devlima')
         .then(res => {
             this.setState({
                 profile: res.data
