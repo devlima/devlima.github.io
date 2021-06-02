@@ -5,11 +5,11 @@ import Projects from './components/Projects';
 function App() {
   useEffect(() => {
     window.location.replace('https://github.com/devlima/')
-  },[]}
+  },[]);
   return (
     <Fragment>
-      // <Profile />
-      // <Projects />
+      {/* <Profile />
+      <Projects /> */}
     </Fragment>
   );
 }
